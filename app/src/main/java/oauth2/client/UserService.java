@@ -9,7 +9,7 @@ import retrofit.RestAdapter;
  */
 public class UserService {
 
-    private IUserService _iUserService;
+    private IUserService _userService;
 
 
     public IUserService getUser() {
@@ -17,9 +17,9 @@ public class UserService {
                 .setEndpoint(OauthConstant.AUTHENTICATION_SERVER_URL).
                         setRequestInterceptor(new RequestInterceptorService().requestInterceptor)
                 .build();
-        _iUserService = restAdapter.create(IUserService.class);
+        _userService = restAdapter.create(IUserService.class);
 
 
-        return _iUserService;
+        return _userService;
     }
 }

@@ -9,7 +9,7 @@ import retrofit.RestAdapter;
  */
 public class OauthService {
 
-    private IOauthService oauthService;
+    private IOauthService _oauthService;
 
 
     public IOauthService getAccessToken() {
@@ -17,9 +17,9 @@ public class OauthService {
                 .setEndpoint(OauthConstant.AUTHENTICATION_SERVER_URL).
                         setRequestInterceptor(new RequestInterceptorService().requestInterceptor)
                 .build();
-        oauthService = restAdapter.create(IOauthService.class);
+        _oauthService = restAdapter.create(IOauthService.class);
 
 
-        return oauthService;
+        return _oauthService;
     }
 }

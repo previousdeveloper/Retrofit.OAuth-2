@@ -9,7 +9,7 @@ import retrofit.RestAdapter;
  */
 public class ApiService {
 
-    private IApiService iApiService;
+    private IApiService _apiService;
 
 
     public IApiService getMessage() {
@@ -17,10 +17,10 @@ public class ApiService {
                 .setEndpoint(OauthConstant.AUTHENTICATION_SERVER_URL).
                         setRequestInterceptor(new RequestInterceptorService().requestInterceptor)
                 .build();
-        iApiService = restAdapter.create(IApiService.class);
+        _apiService = restAdapter.create(IApiService.class);
 
 
-        return iApiService;
+        return _apiService;
     }
 }
 
