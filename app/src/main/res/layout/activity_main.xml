@@ -84,7 +84,7 @@
         android:layout_height="wrap_content"
         android:text="SIGN UP"
         android:id="@+id/btnSignIn"
-        android:hint="SIGN UP"
+        android:hint="SIGN IN"
         android:layout_below="@+id/txtPasswordSignIn"
         android:layout_centerHorizontal="true" />
 
