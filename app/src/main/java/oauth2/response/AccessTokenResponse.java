@@ -11,7 +11,7 @@ public class AccessTokenResponse extends BaseResponse {
     private String token_type;
 
     public String getAccess_token() {
-        return access_token;
+            return access_token;
     }
 
     public String getRefresh_token() {

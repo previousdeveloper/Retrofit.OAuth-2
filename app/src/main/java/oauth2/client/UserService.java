@@ -7,7 +7,7 @@ import retrofit.RestAdapter;
 /**
  * Created by gokhan on 4/18/15.
  */
-public class UserService {
+public class    UserService {
 
     private IUserService _userService;
 

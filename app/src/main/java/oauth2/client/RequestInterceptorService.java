@@ -1,15 +1,19 @@
 package oauth2.client;
 
+import retrofit.RequestInterceptor;
+import ui.MainActivity;
+
 /**
  * Created by gokhan on 4/15/15.
  */
-public class RequestInterceptorService {
+public class RequestInterceptorService{
 
-
-    retrofit.RequestInterceptor requestInterceptor = new retrofit.RequestInterceptor() {
+    RequestInterceptor requestInterceptor = new RequestInterceptor() {
         @Override
         public void intercept(RequestFacade request) {
-            request.addHeader("Authorization", "Bearer 8CM18fqeO9iRN8orFwnZ50rVqr9QAtYc5mEGXlqsb1c=");
+
+
+            request.addHeader("Authorization", "Bearer");
             request.addHeader("User-Agent", "Android");
         }
 
