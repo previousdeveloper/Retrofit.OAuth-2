@@ -1,6 +1,12 @@
 # Retrofit-OAuth-2-Resource-Owner-Password-Credentials
 Simple OAuth2 Resource Owner Password Credentials.
 
+GRADLE BUILD
+
+```java
+ compile 'com.squareup.retrofit:retrofit:1.9.0'
+```
+
 #GetAccessToken
 
 This will add the necessary oAuth headers to each request.
